@@ -1,6 +1,6 @@
 package br.magno.acervo.repositorio;
 
-import br.seu_nome.acervo.entidade.Livro;
+import br.magno.acervo.entidade.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
