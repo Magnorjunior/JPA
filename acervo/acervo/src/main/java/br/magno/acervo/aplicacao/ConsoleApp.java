@@ -28,7 +28,7 @@ public class ConsoleApp {
             System.out.print("Escolha uma opção: ");
 
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // consumir nova linha
+            scanner.nextLine();
 
             switch (opcao) {
                 case 1 -> cadastrarLivro();
@@ -55,7 +55,7 @@ public class ConsoleApp {
 
         System.out.print("Ano de Publicação: ");
         int ano = scanner.nextInt();
-        scanner.nextLine(); // consumir nova linha
+        scanner.nextLine(); 
 
         System.out.print("Editora: ");
         String editora = scanner.nextLine();
@@ -106,7 +106,7 @@ public class ConsoleApp {
     private void buscarPorAno() {
         System.out.print("\nDigite o ano desejado: ");
         int ano = scanner.nextInt();
-        scanner.nextLine(); // consumir nova linha
+        scanner.nextLine(); 
 
         List<Livro> livros = livroRepository.findByAnoPublicacao(ano);
         if (livros.isEmpty()) {
